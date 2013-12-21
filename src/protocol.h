@@ -18,7 +18,8 @@
 extern bool fTestNet;
 static inline unsigned short GetDefaultPort(const bool testnet = fTestNet)
 {
-    return testnet ? 19333 : 9333;
+	#added 1 to the default litecoint ports
+    return testnet ? 19334 : 9334;
 }
 
 

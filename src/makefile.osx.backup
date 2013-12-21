@@ -7,16 +7,18 @@
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
 CXX=llvm-g++
-DEPSDIR=/usr/local
+DEPSDIR=/opt/local
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"$(CURDIR)"/obj \
  -I"$(DEPSDIR)/include" \
+ #-I"$(DEPSDIR)/include/db48"
  -I"/usr/local/opt/berkeley-db4/include"
 
 LIBPATHS= \
  -L"$(DEPSDIR)/lib" \
+ #-L"$(DEPSDIR)/lib/db48"
  -L/usr/local/opt/berkeley-db4/lib
 
 USE_UPNP:=1
